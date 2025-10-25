@@ -1,19 +1,50 @@
 /* PC、スマートフォン共通スタイル */
 body{
-  max-width: 1080px;
   margin: 0 auto 0 auto;
   font-family: 'Noto Sans JP','Caveat', sans-serif;
 }
+
+
+
+
+.section{
+  padding:100px 0;
+}
+.message{
+  background:#F8F8F8;
+
+}
+.works{
+  background:#E6E2DD;
+}
+.service{
+  background:#F8F8F8;
+}
+.inner{
+  max-width:1440px;
+  margin:0 auto;
+  border:solid 1px #333;
+}
+
+
 /* ヘッダー */
-header {
+.header {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:10;
+  
   background-color: #f8f8f8;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
   padding: 0 20px;
   box-sizing: border-box;
 }
+.header .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 /* メインロゴを100×100に固定 */
 #logo img {
@@ -32,19 +63,35 @@ header {
 }
 
 /* ファーストビュー */
-#fv {
+.main-visual {
   position: relative;
   width: 100%;
-  height: 600px;
-  margin: 10 20px;
-  padding: 10 20px;
-  background-image: url('../images/fv画像.jpg');
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
   background-color: #e6e2dd;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  }
+.main-visual-title{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.paw-group-right{
+  position:absolute;
+  top:0;
+  right:0
+}
+.paw-group-left{
+  position:absolute;
+  bottom:0;
+  left:0
 }
 
-#fv h1 {
+
+
+.main-visual h1 {
   position: relative;
   font-size: 80px;
   font-family:'Caveat';
@@ -55,7 +102,7 @@ header {
 }
 
 /* paw を斜め（右下方向）に3つ並べる */
-#fv { position: relative; }
+.main-visual { position: relative; }
 
 .paws {
   position: absolute;

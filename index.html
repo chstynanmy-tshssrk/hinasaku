@@ -13,41 +13,44 @@
  </head>
   <body>
       <!-- ヘッダー -->
-     <header>
+     <header class="header">
+        <div class="inner">
         <!-- メインロゴ -->
-        <a href="index.html" id="logo"><img src="images/HinaSakuロゴ3@2x.jpg" alt="トップページに戻る"></a>
+        <a href="index.html" id="logo"><img src="images/logo-hinasaku@2x.jpg" alt="トップページに戻る"></a>
         <!-- ナビロゴ -->
-        <img src="images/headernavi bone.png" alt="メニュー" class="nav-logo">
+        <img src="images/navi-bone.png" alt="メニュー" class="nav-logo">
+        </div>
      </header> 
-  
-     <article>
+
+
+     <main class="main">
          <!-- ファーストビュー -->
-         <section id="fv">
-           <div>
+         <div class="main-visual">
+
+           <div class="paw-group-right">
              <img src="images/paw.png" alt="paw">
              <img src="images/paw.png" alt="paw">
              <img src="images/paw.png" alt="paw">
            </div>
-           <div id="fv-h1">
+
+           <div class="main-visual-title">
              <h1>HinaSaku</h1>
-           </div>
-           <div>
              <img src="images/diamond.png" alt="diamond">
-           </div>
-           <div>  
              <p>Chiharu Kuwayama</p>
            </div>
-           <div>  
-             <img src="images/paw.png" alt="paw">
-             <img src="images/paw.png" alt="paw">
-             <img src="images/paw.png" alt="paw">
-            </div> 
-         </section>  
-     </article>
 
-     <article>
+           <div class="paw-group-left">
+             <img src="images/paw.png" alt="paw">
+             <img src="images/paw.png" alt="paw">
+             <img src="images/paw.png" alt="paw">
+            </div>
+
+         </div>
+
+         <article class="article">
           <!-- メッセージ -->
-          <section id="message">
+          <section id="message" class="section message">
+             <div class="inner">
              <h2>Message</h2>
               <div>
                  <h3>Paws</h3>
@@ -61,16 +64,16 @@
                  <img src= "images/Bridge.png" alt="bridge">
                  <p>以前は人と人(動物)の『かけはし』になるような仕事をしてきました。<br>これからはWebデザインで、クライアントとその先のお客様を<br>やさしくつなぐ『かけはし』になりたい。<br>そんな願いを込めています</p>
               </div> 
+             </div>
           </section>
-      </article>
-  
-      <article>
+
            <!-- ワークス -->
-           <section id="works">
+           <section id="works" class="section works">
+             <div class="inner">
              <h2>Works</h2>
               <div class="work-item">
                 <a href="works1.html">
-                <img src="images/works1サムネイル.png" alt="works1サムネイル">
+                <img src="https://placehold.jp/ebc6eb/ffffff/400x300.png?text=HinaSaku" alt="works1サムネイル">
                 <P>案件名</P>
                 <p>サイトの種類</p>
                 <P>担当業務</P>
@@ -79,7 +82,7 @@
               </div>
               <div class="work-item">
                 <a href="works2.html">
-                <img src="images/works2サムネイル.png" alt="works2サムネイル">
+                <img src="https://placehold.jp/ebc6eb/ffffff/400x300.png?text=HinaSaku" alt="works2サムネイル">
                 <P>案件名</P>
                 <p>サイトの種類</p>
                 <p>使用言語・アプリケーション</p>
@@ -87,7 +90,7 @@
               </div>
               <div class="work-item">
                 <a href="works3.html">
-                <img src="images/works3サムネイル.png" alt="works3サムネイル">
+                <img src="https://placehold.jp/ebc6eb/ffffff/400x300.png?text=HinaSaku" alt="works3サムネイル">
                 <P>案件名</P>
                 <p>サイトの種類</p>
                 <P>担当業務</P>
@@ -95,12 +98,12 @@
                 </a>
               </div>
              <button>more</button>  
+             </div>
            </section>
-      </article>
 
-      <article>
             <!-- サービス -->
-            <section id="service">
+            <section id="service" class="section service">
+              <div class="inner">
                <h2>Service</h2>
                 <div class="service-item">
                    <h4>Design</h4>
@@ -127,17 +130,20 @@
                    <p>コンサルティング</p>
                    <p>お悩みやご希望を丁寧に聴き一番良い方法をご提案します。</p>
                 </div>
+                </div>
              </section>
       </article>
+      </main>
 
       <!-- フッター -->
-      <footer> 
+      <footer class="footer">
+         <div class="inner">
           <!--コンタクト -->
-          <section id="Contact">
+          <section class="contact">
             <h2>Contact</h2>
-            <img src="images/insta.png" >
+            <img src="images/icon-insta.png" >
             <p>@hinasaku.ck</p>
-            <img src="images/HinaSakuロゴfooter.png" >
+            <img src="images/icon-hinasaku.png" >
             <p>HinaSaku</p>
           </section>
           <nav>
@@ -146,6 +152,7 @@
         
         
             <p>Copyright © HinaSaku All Rights Reserved.</p> 
+         </div>
       </footer>
     
   </body>
