@@ -1,0 +1,145 @@
+/* PC、スマートフォン共通スタイル */
+body{
+  margin: 0 auto 0 auto;
+  font-family: 'Noto Sans JP','Caveat', sans-serif;
+}
+
+
+
+
+.section{
+  padding:100px 0;
+}
+.message{
+  background:#F8F8F8;
+
+}
+.works{
+  background:#E6E2DD;
+}
+.service{
+  background:#F8F8F8;
+}
+.inner{
+  max-width:1440px;
+  margin:0 auto;
+  border:solid 1px #333;
+}
+
+
+/* ヘッダー */
+.header {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:10;
+  
+  background-color: #f8f8f8;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.header .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* メインロゴを100×100に固定 */
+#logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain; /* 画像の縦横比を保って収める */
+  display: block;
+}
+ 
+/* ナビロゴ（ヘッダー右） */
+.nav-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ファーストビュー */
+.main-visual {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #e6e2dd;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  }
+.main-visual-title{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.paw-group-right{
+  position:absolute;
+  top:0;
+  right:0
+}
+.paw-group-left{
+  position:absolute;
+  bottom:0;
+  left:0
+}
+
+
+
+.main-visual h1 {
+  position: relative;
+  font-size: 80px;
+  font-family:'Caveat';
+  color: #333333;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* paw を斜め（右下方向）に3つ並べる */
+.main-visual { position: relative; }
+
+.paws {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  display: flex;
+  gap: 0; /* 個別にオフセットするため隙間は0 */
+  align-items: center;
+}
+.paws img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  opacity: 0.95;
+}
+
+/* 上段：h1 の上に配置、左から右に徐々に下げていく（右斜め） */
+.paws-top { top: 28px; }
+.paws-top img:nth-child(1) { transform: translate( -40px, -8px ); }
+.paws-top img:nth-child(2) { transform: translate( 0px, 0px ); }
+.paws-top img:nth-child(3) { transform: translate( 40px, 8px ); }
+
+/* 下段：h1 の下に配置、左から右に徐々に上げていく（右斜め） */
+.paws-bottom { bottom: 28px; }
+.paws-bottom img:nth-child(1) { transform: translate( -40px, 8px ); }
+.paws-bottom img:nth-child(2) { transform: translate( 0px, 0px ); }
+.paws-bottom img:nth-child(3) { transform: translate( 40px, -8px ); }
+
+/* レスポンシブ：小画面はアイコンを小さくしたりオフセットを狭める */
+@media (max-width: 600px) {
+  .paws img { width: 28px; height: 28px; }
+  .paws-top { top: 18px; }
+  .paws-bottom { bottom: 18px; }
+  .paws-top img:nth-child(1) { transform: translate(-28px,-6px); }
+  .paws-top img:nth-child(3) { transform: translate(28px,6px); }
+  .paws-bottom img:nth-child(1) { transform: translate(-28px,6px); }
+  .paws-bottom img:nth-child(3) { transform: translate(28px,-6px); }
+}
